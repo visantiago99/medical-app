@@ -18,8 +18,8 @@ const Header = () => {
       <span className="font-bold">Medical APP</span>
 
       <Avatar>
-        <AvatarImage src="https://github.com/visantiago99.png" />
-        <AvatarFallback>VS</AvatarFallback>
+        <AvatarImage src="https://xsgames.co/randomusers/avatar.php?g=male" />
+        <AvatarFallback>MA</AvatarFallback>
       </Avatar>
     </header>
   );

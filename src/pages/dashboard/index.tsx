@@ -1,6 +1,6 @@
-import DashCalendar from '@/components/DashCalendar';
-import DashCards from '@/components/DashCards';
-import { DashTable } from '@/components/DashTable';
+import DashCalendar from '@/components/Dashboard/DashCalendar';
+import DashCards from '@/components/Dashboard/DashCards';
+import DashTable from '@/components/Dashboard/DashTable';
 import SearchBar from '@/components/SearchBar';
 import MainLayout from '@/layouts/MainLayout';
 import { Label } from '@radix-ui/react-label';
