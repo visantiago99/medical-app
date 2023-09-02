@@ -10,11 +10,11 @@ import {
   ClockIcon,
 } from '@heroicons/react/24/outline';
 import { useRouter } from 'next/router';
+import BaseTooltip from './BaseTooltip';
 
 export default function SidebarDemo() {
   const [open, setOpen] = useState(false);
   const router = useRouter();
-  console.log(router.pathname);
 
   return (
     <div className="flex">
@@ -36,55 +36,67 @@ export default function SidebarDemo() {
           </div>
           <div className="flex-1">
             <ul className="pt-2 pb-4 flex flex-col gap-8 text-sm">
-              <li
-                className={`rounded-sm w-full hover:bg-slate-400 ${
-                  router.pathname === '/dashboard' ? 'bg-slate-400' : ''
-                }`}
-              >
-                <Link
-                  href="/"
-                  className={`flex items-center rounded-md p-2 ${
-                    open ? 'space-x-3' : ''
+              <BaseTooltip content="Dashboard">
+                <li
+                  className={`rounded-sm w-full hover:bg-slate-400 ${
+                    router.pathname === '/dashboard' ? 'bg-slate-400' : ''
                   }`}
                 >
-                  <BuildingOffice2Icon className="h-6 w-6" />
-                  <span className="text-black">{open ? 'Dashboard' : ''}</span>
-                </Link>
-              </li>
-              <li
-                className={`rounded-sm w-full hover:bg-slate-400 ${
-                  router.pathname === '/agenda-consultas' ? 'bg-slate-400' : ''
-                }`}
-              >
-                <Link
-                  href="/agenda-consultas"
-                  className={`flex items-center rounded-md p-2 ${
-                    open ? 'space-x-3' : ''
+                  <Link
+                    href="/"
+                    className={`flex items-center rounded-md p-2 ${
+                      open ? 'space-x-3' : ''
+                    }`}
+                  >
+                    <BuildingOffice2Icon className="h-6 w-6" />
+                    <span className="text-black">
+                      {open ? 'Dashboard' : ''}
+                    </span>
+                  </Link>
+                </li>
+              </BaseTooltip>
+              <BaseTooltip content="Agenda de Consultas">
+                <li
+                  className={`rounded-sm w-full hover:bg-slate-400 ${
+                    router.pathname === '/agenda-consultas'
+                      ? 'bg-slate-400'
+                      : ''
                   }`}
                 >
-                  <ClockIcon className="h-6 w-6" />
-                  <span className="text-black">
-                    {open ? 'Agendar Consulta' : ''}
-                  </span>
-                </Link>
-              </li>
-              <li
-                className={`rounded-sm w-full hover:bg-slate-400 ${
-                  router.pathname === '/status-consultas' ? 'bg-slate-400' : ''
-                }`}
-              >
-                <Link
-                  href="/status-consultas"
-                  className={`flex items-center rounded-md p-2 ${
-                    open ? 'space-x-3' : ''
+                  <Link
+                    href="/agenda-consultas"
+                    className={`flex items-center rounded-md p-2 ${
+                      open ? 'space-x-3' : ''
+                    }`}
+                  >
+                    <ClockIcon className="h-6 w-6" />
+                    <span className="text-black">
+                      {open ? 'Agendar Consulta' : ''}
+                    </span>
+                  </Link>
+                </li>
+              </BaseTooltip>
+              <BaseTooltip content="Status de Consulta">
+                <li
+                  className={`rounded-sm w-full hover:bg-slate-400 ${
+                    router.pathname === '/status-consultas'
+                      ? 'bg-slate-400'
+                      : ''
                   }`}
                 >
-                  <ClipboardDocumentListIcon className="h-6 w-6" />
-                  <span className="text-black">
-                    {open ? 'Status de Consulta' : ''}
-                  </span>
-                </Link>
-              </li>
+                  <Link
+                    href="/status-consultas"
+                    className={`flex items-center rounded-md p-2 ${
+                      open ? 'space-x-3' : ''
+                    }`}
+                  >
+                    <ClipboardDocumentListIcon className="h-6 w-6" />
+                    <span className="text-black">
+                      {open ? 'Status de Consulta' : ''}
+                    </span>
+                  </Link>
+                </li>
+              </BaseTooltip>
             </ul>
           </div>
         </div>

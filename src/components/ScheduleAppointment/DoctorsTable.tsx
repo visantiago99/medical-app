@@ -6,37 +6,37 @@ import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 const data: PatientProps[] = [
   {
     id: 'm5gr84i9',
-    status: 'success',
+    status: 'Atendendo',
     doctor: 'Ken',
     speciality: 'Cardiologia',
   },
   {
     id: '3u1reuv4',
-    status: 'success',
+    status: 'Atendendo',
     doctor: 'Abe',
     speciality: 'Ginecologia',
   },
   {
     id: 'derv1ws0',
-    status: 'processing',
+    status: 'Atendendo',
     doctor: 'Monsera',
     speciality: 'Ortopedia',
   },
   {
     id: '5kma53ae',
-    status: 'success',
+    status: 'Atendendo',
     doctor: 'Silas',
     speciality: 'Neurologia',
   },
   {
     id: 'bhqecj4p',
-    status: 'failed',
+    status: 'Livre',
     doctor: 'Carmella',
     speciality: 'Psiquiatria',
   },
   {
     id: 'bhqecj4p12',
-    status: 'failed',
+    status: 'Livre',
     doctor: 'Carteesa',
     speciality: 'Dermatologia',
   },
@@ -44,7 +44,7 @@ const data: PatientProps[] = [
 
 export type PatientProps = {
   id: string;
-  status: 'pending' | 'processing' | 'success' | 'failed';
+  status: 'Atendendo' | 'Livre';
   doctor: string;
   speciality: string;
 };

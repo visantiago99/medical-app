@@ -7,49 +7,49 @@ const data: PatientProps[] = [
   {
     id: 'm5gr84i9',
     schedule: '02/09/2023, 07:30:00',
-    status: 'success',
+    status: 'Atendido',
     patient: 'Ken',
   },
   {
     id: '3u1reuv4',
     schedule: '02/09/2023, 08:30:00',
-    status: 'success',
+    status: 'Atendido',
     patient: 'Abe',
   },
   {
     id: 'derv1ws0',
     schedule: '02/09/2023, 09:00:00',
-    status: 'processing',
+    status: 'Marcado',
     patient: 'Monsera',
   },
   {
     id: '5kma53ae',
     schedule: '02/09/2023, 09:30:00',
-    status: 'success',
+    status: 'Atendido',
     patient: 'Silas',
   },
   {
     id: 'bhqecj4p',
     schedule: '02/09/2023, 09:30:00',
-    status: 'failed',
+    status: 'Desmarcado',
     patient: 'Carmella',
   },
   {
     id: 'bhqecj4p12',
     schedule: '02/09/2023, 10:00:00',
-    status: 'failed',
+    status: 'Desmarcado',
     patient: 'Carteesa',
   },
   {
     id: 'bhqesafacj4p12',
     schedule: '02/09/2023, 10:30:00',
-    status: 'success',
+    status: 'Marcado',
     patient: 'Devns',
   },
   {
     id: 'bhqesafacj4p12',
     schedule: '02/09/2023, 11:00:00',
-    status: 'success',
+    status: 'Marcado',
     patient: 'Waasns',
   },
 ];
@@ -57,7 +57,7 @@ const data: PatientProps[] = [
 export type PatientProps = {
   id: string;
   schedule: string;
-  status: 'pending' | 'processing' | 'success' | 'failed';
+  status: 'Aguardando' | 'Marcado' | 'Atendido' | 'Desmarcado';
   patient: string;
 };
 
