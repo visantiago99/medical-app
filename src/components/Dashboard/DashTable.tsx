@@ -44,6 +44,18 @@ const data: Payment[] = [
     status: 'failed',
     email: 'carmella@hotmail.com',
   },
+  {
+    id: 'bhqecj4p12',
+    amount: 221,
+    status: 'failed',
+    email: 'carteesa@hotmail.com',
+  },
+  {
+    id: 'bhqesafacj4p12',
+    amount: 521,
+    status: 'success',
+    email: 'devns12@hotmail.com',
+  },
 ];
 
 export type Payment = {
@@ -142,7 +154,12 @@ export const columns: ColumnDef<Payment>[] = [
 
 const DashTable = () => {
   return (
-    <SortableTable data={data} columns={columns as ColumnDef<DataProps>[]} />
+    <SortableTable
+      data={data}
+      columns={columns as ColumnDef<DataProps>[]}
+      hasFilter
+      hasPagination
+    />
   );
 };
 

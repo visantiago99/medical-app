@@ -1,5 +1,6 @@
 import DashCalendar from '@/components/Dashboard/DashCalendar';
 import DashCards from '@/components/Dashboard/DashCards';
+import DashPatientsTable from '@/components/Dashboard/DashPatientsTable';
 import DashTable from '@/components/Dashboard/DashTable';
 import SearchBar from '@/components/SearchBar';
 import MainLayout from '@/layouts/MainLayout';
@@ -23,8 +24,9 @@ const DashboardPage = () => {
               <DashTable />
             </div>
           </div>
-          <div className="w-[40%]" style={{ border: '2px solid red' }}>
+          <div className="w-[40%]">
             <DashCalendar />
+            <DashPatientsTable />
           </div>
         </div>
       </div>
