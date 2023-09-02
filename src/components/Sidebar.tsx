@@ -31,7 +31,7 @@ export default function SidebarDemo() {
             </button>
           </div>
           <div className="flex-1">
-            <ul className="pt-2 pb-4 flex flex-col gap-2 text-sm">
+            <ul className="pt-2 pb-4 flex flex-col gap-8 text-sm">
               <li className="rounded-sm">
                 <Link
                   href="/"
