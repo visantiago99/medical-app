@@ -8,7 +8,7 @@ const DashCards = () => {
         <Card className="h-[10.2rem]">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">
-              Total Faturado
+              Total Diário Faturado
             </CardTitle>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -24,16 +24,14 @@ const DashCards = () => {
             </svg>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">R$45,231.89</div>
-            <p className="text-xs text-muted-foreground">
-              +20.1% do último mês
-            </p>
+            <div className="text-2xl font-bold">R$5,231.89</div>
+            <p className="text-xs text-muted-foreground">+20.1% de ontem</p>
           </CardContent>
         </Card>
         <Card className="h-[10.2rem]">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">
-              Pacientes Atendidos
+              Consultas Agendadas
             </CardTitle>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -51,16 +49,14 @@ const DashCards = () => {
             </svg>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">+2350</div>
-            <p className="text-xs text-muted-foreground">
-              +180.1% do último mês
-            </p>
+            <div className="text-2xl font-bold">+22</div>
+            <p className="text-xs text-muted-foreground">+40.1% de ontem</p>
           </CardContent>
         </Card>
         <Card className="h-[10.2rem]">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">
-              Assinatura Mensal
+              Consultas Realizadas
             </CardTitle>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -77,14 +73,14 @@ const DashCards = () => {
             </svg>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">+12,234</div>
-            <p className="text-xs text-muted-foreground">+19% do último mês</p>
+            <div className="text-2xl font-bold">+12</div>
+            <p className="text-xs text-muted-foreground">+19% de ontem</p>
           </CardContent>
         </Card>
         <Card className="h-[10.2rem]">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">
-              Pacientes Ativos
+              Pacientes Online
             </CardTitle>
             <svg
               xmlns="http://www.w3.org/2000/svg"
