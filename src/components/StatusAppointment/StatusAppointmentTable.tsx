@@ -185,7 +185,7 @@ export const columns: ColumnDef<Payment>[] = [
               Copiar ID do pagamento
             </DropdownMenuItem>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>Ver Paciente</DropdownMenuItem>
+            <DropdownMenuItem>Editar Consulta</DropdownMenuItem>
             <DropdownMenuItem>Ver Detalhes do Pagamento</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

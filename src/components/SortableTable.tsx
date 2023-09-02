@@ -1,5 +1,3 @@
-'use client';
-
 import * as React from 'react';
 import {
   ColumnDef,
@@ -41,11 +39,13 @@ export function SortableTable({
   columns,
   hasFilter = false,
   hasPagination = false,
+  hasHeader = true,
 }: {
   data: DataProps[];
   columns: ColumnDef<DataProps>[];
   hasFilter?: boolean;
   hasPagination?: boolean;
+  hasHeader?: boolean;
 }) {
   const [sorting, setSorting] = React.useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
@@ -73,6 +73,12 @@ export function SortableTable({
       rowSelection,
     },
   });
+
+  React.useEffect(() => {
+    if (!hasPagination) {
+      table.setPageSize(20);
+    }
+  }, [hasPagination]);
 
   return (
     <div className="w-full">
@@ -114,26 +120,32 @@ export function SortableTable({
           </DropdownMenu>
         </div>
       )}
-      <div className="rounded-md border bg-white">
+      <div
+        className={`rounded-md border bg-white ${
+          hasPagination ? '' : 'h-[36rem] overflow-y-auto'
+        }`}
+      >
         <Table>
-          <TableHeader>
-            {table.getHeaderGroups().map((headerGroup) => (
-              <TableRow key={headerGroup.id}>
-                {headerGroup.headers.map((header) => {
-                  return (
-                    <TableHead key={header.id}>
-                      {header.isPlaceholder
-                        ? null
-                        : flexRender(
-                            header.column.columnDef.header,
-                            header.getContext(),
-                          )}
-                    </TableHead>
-                  );
-                })}
-              </TableRow>
-            ))}
-          </TableHeader>
+          {hasHeader && (
+            <TableHeader>
+              {table.getHeaderGroups().map((headerGroup) => (
+                <TableRow key={headerGroup.id}>
+                  {headerGroup.headers.map((header) => {
+                    return (
+                      <TableHead key={header.id}>
+                        {header.isPlaceholder
+                          ? null
+                          : flexRender(
+                              header.column.columnDef.header,
+                              header.getContext(),
+                            )}
+                      </TableHead>
+                    );
+                  })}
+                </TableRow>
+              ))}
+            </TableHeader>
+          )}
           <TableBody>
             {table.getRowModel().rows?.length ? (
               table.getRowModel().rows.map((row) => (

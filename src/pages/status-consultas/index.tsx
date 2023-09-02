@@ -1,13 +1,13 @@
-import StatusAppointmentTable from '@/components/StatusConsultas/StatusAppointmentTable';
 import { Label } from '@/components/ui/label';
 import { ArrowLeftIcon } from '@heroicons/react/24/outline';
 import MainLayout from '@/layouts/MainLayout';
 import React from 'react';
 import Link from 'next/link';
+import StatusAppointmentTable from '@/components/StatusAppointment/StatusAppointmentTable';
 
 const AppointmentStatus = () => {
   return (
-    <MainLayout>
+    <MainLayout title="Status de Consultas">
       <div>
         <div className="flex items-center gap-4">
           <Link href={'/'}>
