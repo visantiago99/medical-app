@@ -1,10 +1,11 @@
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
+import MainLayout from '@/layouts/MainLayout';
 
 export default function Home() {
-  const router = useRouter();
-  useEffect(() => {
-    router.push('/dashboard');
-  }, []);
-  return <></>;
+  return (
+    <MainLayout>
+      <>
+        <div>DashboardPage</div>
+      </>
+    </MainLayout>
+  );
 }

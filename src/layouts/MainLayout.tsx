@@ -1,4 +1,5 @@
 import Header from '@/components/Header';
+import Sidebar from '@/components/Sidebar';
 import Head from 'next/head';
 import { ReactElement } from 'react';
 
@@ -13,13 +14,13 @@ const MainLayout = ({ children, title }: MainLayoutProps) => (
       <title>{`Medical App - ${title ?? ''}`}</title>
       <meta
         name="description"
-        content="This is the Next Generation PowerHub!"
+        content="This is the Next Generation Medical App!"
       />
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Header />
     <div className="flex h-full w-full">
-      {/* <Sidebar /> */}
+      <Sidebar />
       <main
         className="w-full bg-gray-50 overflow-y-auto"
         style={{ height: 'calc(100vh - 4rem)' }}

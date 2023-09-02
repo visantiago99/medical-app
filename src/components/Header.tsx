@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import React from 'react';
+import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 
 const Header = () => {
   return (
@@ -15,21 +15,12 @@ const Header = () => {
       justify-between
     "
     >
-      <span>logo</span>
-      <nav className="flex items-center gap-2">
-        <Link href={'/'} passHref>
-          Holmes
-        </Link>
-        <Link href={'/about'} passHref>
-          About
-        </Link>
-        <Link href={'/projects'} passHref>
-          Projects
-        </Link>
-        <Link href={'/contact'} passHref>
-          Contact
-        </Link>
-      </nav>
+      <span className="font-bold">Medical APP</span>
+
+      <Avatar>
+        <AvatarImage src="https://github.com/visantiago99.png" />
+        <AvatarFallback>VS</AvatarFallback>
+      </Avatar>
     </header>
   );
 };
