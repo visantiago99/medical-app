@@ -1,3 +1,4 @@
+import Header from '@/components/Header';
 import Head from 'next/head';
 import { ReactElement } from 'react';
 
@@ -9,17 +10,14 @@ interface MainLayoutProps {
 const MainLayout = ({ children, title }: MainLayoutProps) => (
   <>
     <Head>
-      <title>
-        {title ? `${title} | ` : ''}
-        PowerHub
-      </title>
+      <title>{`Medical App - ${title ?? ''}`}</title>
       <meta
         name="description"
         content="This is the Next Generation PowerHub!"
       />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    {/* <Header /> */}
+    <Header />
     <div className="flex h-full w-full">
       {/* <Sidebar /> */}
       <main

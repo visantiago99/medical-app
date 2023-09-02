@@ -1,5 +1,15 @@
+import MainLayout from '@/layouts/MainLayout';
+
 const DashboardPage = () => {
-  return <div>DashboardPage</div>;
+  return (
+    <MainLayout>
+      <>
+        <div>DashboardPage</div>
+        <p>ola</p>
+        <h1>alou</h1>
+      </>
+    </MainLayout>
+  );
 };
 
 export default DashboardPage;
