@@ -1,5 +1,6 @@
 import DashCalendar from '@/components/DashCalendar';
 import DashCards from '@/components/DashCards';
+import { DashTable } from '@/components/DashTable';
 import SearchBar from '@/components/SearchBar';
 import { Label } from '@/components/ui/label';
 import MainLayout from '@/layouts/MainLayout';
@@ -23,6 +24,7 @@ export default function Home() {
           <Label className="text-2xl" htmlFor="warnings">
             AVISOS / LEMBRETES
           </Label>
+          <DashTable />
         </div>
       </div>
     </MainLayout>
