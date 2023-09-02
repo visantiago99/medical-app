@@ -3,7 +3,7 @@ import { DataProps, SortableTable } from '../SortableTable';
 import { ColumnDef } from '@tanstack/react-table';
 import { Checkbox } from '../ui/checkbox';
 import { Button } from '../ui/button';
-import { CaretSortIcon, DotsHorizontalIcon } from '@radix-ui/react-icons';
+import { DotsHorizontalIcon } from '@radix-ui/react-icons';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -18,43 +18,81 @@ const data: Payment[] = [
     id: 'm5gr84i9',
     amount: 316,
     status: 'success',
+    schedule: '02/09/2023, 07:30:00',
     email: 'ken99@yahoo.com',
+    name: 'ken',
   },
   {
     id: '3u1reuv4',
     amount: 242,
     status: 'success',
+    schedule: '02/09/2023, 07:30:00',
+    name: 'abe',
     email: 'Abe45@gmail.com',
   },
   {
     id: 'derv1ws0',
     amount: 837,
     status: 'processing',
+    schedule: '02/09/2023, 07:30:00',
+    name: 'monserrat',
     email: 'Monserrat44@gmail.com',
   },
   {
     id: '5kma53ae',
     amount: 874,
     status: 'success',
+    schedule: '02/09/2023, 07:30:00',
+    name: 'Sila',
     email: 'Silas22@gmail.com',
   },
   {
     id: 'bhqecj4p',
     amount: 721,
     status: 'failed',
+    schedule: '02/09/2023, 07:30:00',
+    name: 'carmella',
     email: 'carmella@hotmail.com',
   },
   {
     id: 'bhqecj4p12',
     amount: 221,
     status: 'failed',
+    schedule: '02/09/2023, 07:30:00',
+    name: 'carteesa',
     email: 'carteesa@hotmail.com',
   },
   {
     id: 'bhqesafacj4p12',
     amount: 521,
     status: 'success',
+    schedule: '02/09/2023, 07:30:00',
+    name: 'devns',
     email: 'devns12@hotmail.com',
+  },
+  {
+    id: 'm5gr84i9',
+    amount: 316,
+    status: 'success',
+    schedule: '02/09/2023, 07:30:00',
+    name: 'ken',
+    email: 'ken99@yahoo.com',
+  },
+  {
+    id: '3u1reuv4',
+    amount: 242,
+    status: 'success',
+    schedule: '02/09/2023, 07:30:00',
+    name: 'Abe',
+    email: 'Abe45@gmail.com',
+  },
+  {
+    id: 'derv1ws0',
+    amount: 837,
+    status: 'processing',
+    schedule: '02/09/2023, 07:30:00',
+    name: 'Monserrat',
+    email: 'Monserrat44@gmail.com',
   },
 ];
 
@@ -63,6 +101,8 @@ export type Payment = {
   amount: number;
   status: 'pending' | 'processing' | 'success' | 'failed';
   email: string;
+  name: string;
+  schedule: string;
 };
 
 export const columns: ColumnDef<Payment>[] = [
@@ -94,18 +134,20 @@ export const columns: ColumnDef<Payment>[] = [
   },
   {
     accessorKey: 'email',
-    header: ({ column }) => {
-      return (
-        <Button
-          variant="ghost"
-          onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
-        >
-          Email
-          <CaretSortIcon className="ml-2 h-4 w-4" />
-        </Button>
-      );
-    },
+    header: 'Email',
     cell: ({ row }) => <div className="lowercase">{row.getValue('email')}</div>,
+  },
+  {
+    accessorKey: 'name',
+    header: 'Nome',
+    cell: ({ row }) => <div className="capitalize">{row.getValue('name')}</div>,
+  },
+  {
+    accessorKey: 'schedule',
+    header: 'Horário',
+    cell: ({ row }) => (
+      <div className="capitalize">{row.getValue('schedule')}</div>
+    ),
   },
   {
     accessorKey: 'amount',
@@ -136,15 +178,15 @@ export const columns: ColumnDef<Payment>[] = [
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
-            <DropdownMenuLabel>Actions</DropdownMenuLabel>
+            <DropdownMenuLabel>Ações</DropdownMenuLabel>
             <DropdownMenuItem
               onClick={() => navigator.clipboard.writeText(payment.id)}
             >
-              Copy payment ID
+              Copiar ID do pagamento
             </DropdownMenuItem>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>View customer</DropdownMenuItem>
-            <DropdownMenuItem>View payment details</DropdownMenuItem>
+            <DropdownMenuItem>Ver Paciente</DropdownMenuItem>
+            <DropdownMenuItem>Ver Detalhes do Pagamento</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       );

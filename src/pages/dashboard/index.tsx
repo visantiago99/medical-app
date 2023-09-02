@@ -3,8 +3,8 @@ import DashCards from '@/components/Dashboard/DashCards';
 import DashPatientsTable from '@/components/Dashboard/DashPatientsTable';
 import DashTable from '@/components/Dashboard/DashReminderTable';
 import SearchBar from '@/components/SearchBar';
+import { Label } from '@/components/ui/label';
 import MainLayout from '@/layouts/MainLayout';
-import { Label } from '@radix-ui/react-label';
 import React from 'react';
 
 const DashboardPage = () => {
