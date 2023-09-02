@@ -5,7 +5,7 @@ const DashCards = () => {
   return (
     <div className="mx-auto">
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-        <Card>
+        <Card className="h-[10.2rem]">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Total Revenue</CardTitle>
             <svg
@@ -28,7 +28,7 @@ const DashCards = () => {
             </p>
           </CardContent>
         </Card>
-        <Card>
+        <Card className="h-[10.2rem]">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Subscriptions</CardTitle>
             <svg
@@ -53,7 +53,7 @@ const DashCards = () => {
             </p>
           </CardContent>
         </Card>
-        <Card>
+        <Card className="h-[10.2rem]">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Sales</CardTitle>
             <svg
@@ -77,7 +77,7 @@ const DashCards = () => {
             </p>
           </CardContent>
         </Card>
-        <Card>
+        <Card className="h-[10.2rem]">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Active Now</CardTitle>
             <svg
