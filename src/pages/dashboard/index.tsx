@@ -2,7 +2,7 @@ import DashCalendar from '@/components/Dashboard/DashCalendar';
 import DashCards from '@/components/Dashboard/DashCards';
 import DashPatientsTable from '@/components/Dashboard/DashPatientsTable';
 import DashTable from '@/components/Dashboard/DashReminderTable';
-import SearchBar from '@/components/SearchBar';
+import SearchBar from '@/components/base/SearchBar';
 import { Label } from '@/components/ui/label';
 import MainLayout from '@/layouts/MainLayout';
 import React from 'react';

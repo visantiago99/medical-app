@@ -185,6 +185,7 @@ export function SortableTable({
           <div className="space-x-2">
             <Button
               variant="outline"
+              className="bg-[#f0f0f0]"
               size="sm"
               onClick={() => table.previousPage()}
             >
@@ -192,6 +193,7 @@ export function SortableTable({
             </Button>
             <Button
               variant="outline"
+              className="bg-[#f0f0f0]"
               size="sm"
               onClick={() => table.nextPage()}
             >

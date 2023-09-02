@@ -1,5 +1,5 @@
 import React from 'react';
-import { DataProps, SortableTable } from '../SortableTable';
+import { DataProps, SortableTable } from '../base/SortableTable';
 import { ColumnDef } from '@tanstack/react-table';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 

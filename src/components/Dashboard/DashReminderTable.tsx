@@ -1,5 +1,5 @@
 import React from 'react';
-import { DataProps, SortableTable } from '../SortableTable';
+import { DataProps, SortableTable } from '../base/SortableTable';
 import { ColumnDef } from '@tanstack/react-table';
 import { Checkbox } from '../ui/checkbox';
 import { Button } from '../ui/button';

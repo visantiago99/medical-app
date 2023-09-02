@@ -1,5 +1,5 @@
-import Header from '@/components/Header';
-import Sidebar from '@/components/Sidebar';
+import Header from '@/components/base/Header';
+import Sidebar from '@/components/base/Sidebar';
 import Head from 'next/head';
 import { ReactElement } from 'react';
 import { Roboto } from 'next/font/google';
@@ -25,7 +25,7 @@ const MainLayout = ({ children, title }: MainLayoutProps) => (
     <div className="flex h-full w-full">
       <Sidebar />
       <main
-        className={`w-full h-full bg-gray-50 overflow-y-auto px-8 py-4 ${roboto.className}`}
+        className={`w-full h-full bg-slate-300 overflow-y-auto px-8 py-4 ${roboto.className}`}
         style={{ height: 'calc(100vh - 4rem)' }}
       >
         {children}

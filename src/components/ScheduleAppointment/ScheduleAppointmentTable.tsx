@@ -1,5 +1,5 @@
 import React from 'react';
-import { DataProps, SortableTable } from '../SortableTable';
+import { DataProps, SortableTable } from '../base/SortableTable';
 import { ColumnDef } from '@tanstack/react-table';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import {
@@ -9,7 +9,7 @@ import {
   PlusCircleIcon,
 } from '@heroicons/react/24/outline';
 import { Button } from '../ui/button';
-import BaseTooltip from '../BaseTooltip';
+import BaseTooltip from '../base/BaseTooltip';
 
 const data: ScheduleAppointment[] = [
   {
