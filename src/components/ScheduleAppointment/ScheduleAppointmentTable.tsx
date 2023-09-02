@@ -9,6 +9,7 @@ import {
   PlusCircleIcon,
 } from '@heroicons/react/24/outline';
 import { Button } from '../ui/button';
+import BaseTooltip from '../BaseTooltip';
 
 const data: ScheduleAppointment[] = [
   {
@@ -162,21 +163,29 @@ export const columns: ColumnDef<ScheduleAppointment>[] = [
 
       return hasDoctor ? (
         <div className="text-right">
-          <Button variant={'link'}>
-            <CalendarDaysIcon className="h-6 w-6" />
-          </Button>
-          <Button variant={'link'}>
-            <PencilSquareIcon className="h-6 w-6" />
-          </Button>
-          <Button variant={'link'}>
-            <TrashIcon className="h-6 w-6" />
-          </Button>
+          <BaseTooltip content="Remarcar">
+            <Button variant={'link'}>
+              <CalendarDaysIcon className="h-6 w-6" />
+            </Button>
+          </BaseTooltip>
+          <BaseTooltip content="Editar">
+            <Button variant={'link'}>
+              <PencilSquareIcon className="h-6 w-6" />
+            </Button>
+          </BaseTooltip>
+          <BaseTooltip content="Apagar">
+            <Button variant={'link'}>
+              <TrashIcon className="h-6 w-6" />
+            </Button>
+          </BaseTooltip>
         </div>
       ) : (
         <div className="text-right">
-          <Button variant={'link'}>
-            <PlusCircleIcon className="h-6 w-6" />
-          </Button>
+          <BaseTooltip content="Adicionar">
+            <Button variant={'link'}>
+              <PlusCircleIcon className="h-6 w-6" />
+            </Button>
+          </BaseTooltip>
         </div>
       );
     },

@@ -16,6 +16,11 @@ const AppointmentSchedule = () => {
             <ArrowLeftIcon className="w-6 h-6" />
           </Link>
           <Label className="text-2xl" htmlFor="status-table">
+            Agendamento de Consultas
+          </Label>
+        </div>
+        <div className="mt-4">
+          <Label className="text-2xl" htmlFor="status-table">
             Médicos
           </Label>
         </div>
