@@ -1,7 +1,7 @@
 import DashCalendar from '@/components/Dashboard/DashCalendar';
 import DashCards from '@/components/Dashboard/DashCards';
 import DashPatientsTable from '@/components/Dashboard/DashPatientsTable';
-import DashTable from '@/components/Dashboard/DashTable';
+import DashTable from '@/components/Dashboard/DashReminderTable';
 import SearchBar from '@/components/SearchBar';
 import MainLayout from '@/layouts/MainLayout';
 import { Label } from '@radix-ui/react-label';
@@ -19,7 +19,7 @@ const DashboardPage = () => {
             </div>
             <div className="mt-4">
               <Label className="text-2xl" htmlFor="warnings">
-                CONSULTAS
+                AVISOS / LEMBRETES
               </Label>
               <DashTable />
             </div>

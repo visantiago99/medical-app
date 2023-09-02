@@ -152,7 +152,7 @@ export const columns: ColumnDef<Payment>[] = [
   },
 ];
 
-const DashTable = () => {
+const StatusAppointmentTable = () => {
   return (
     <SortableTable
       data={data}
@@ -163,4 +163,4 @@ const DashTable = () => {
   );
 };
 
-export default DashTable;
+export default StatusAppointmentTable;
