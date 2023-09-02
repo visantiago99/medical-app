@@ -10,6 +10,7 @@ import {
 } from '@heroicons/react/24/outline';
 import { Button } from '../ui/button';
 import BaseTooltip from '../base/BaseTooltip';
+import { Badge } from '../ui/badge';
 
 const data: ScheduleAppointment[] = [
   {
@@ -143,7 +144,7 @@ export const columns: ColumnDef<ScheduleAppointment>[] = [
           <AvatarFallback>MA</AvatarFallback>
         </Avatar>
       ) : (
-        <p>Livre</p>
+        <Badge>Livre</Badge>
       );
     },
     enableSorting: false,

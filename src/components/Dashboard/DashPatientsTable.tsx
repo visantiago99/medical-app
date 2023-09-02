@@ -2,6 +2,7 @@ import React from 'react';
 import { DataProps, SortableTable } from '../base/SortableTable';
 import { ColumnDef } from '@tanstack/react-table';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
+import { Badge } from '../ui/badge';
 
 const data: PatientProps[] = [
   {
@@ -85,7 +86,9 @@ export const columns: ColumnDef<PatientProps>[] = [
     accessorKey: 'status',
     header: 'Status',
     cell: ({ row }) => (
-      <div className="capitalize">{row.getValue('status')}</div>
+      <div className="capitalize">
+        <Badge>{row.getValue('status')}</Badge>
+      </div>
     ),
   },
   {
