@@ -8,49 +8,49 @@ const data: PatientProps[] = [
     id: 'm5gr84i9',
     schedule: '02/09/2023, 07:30:00',
     status: 'success',
-    patient: 'ken99@yahoo.com',
+    patient: 'Ken',
   },
   {
     id: '3u1reuv4',
     schedule: '02/09/2023, 08:30:00',
     status: 'success',
-    patient: 'Abe45@gmail.com',
+    patient: 'Abe',
   },
   {
     id: 'derv1ws0',
     schedule: '02/09/2023, 09:00:00',
     status: 'processing',
-    patient: 'Monserrat44@gmail.com',
+    patient: 'Monsera',
   },
   {
     id: '5kma53ae',
     schedule: '02/09/2023, 09:30:00',
     status: 'success',
-    patient: 'Silas22@gmail.com',
+    patient: 'Silas',
   },
   {
     id: 'bhqecj4p',
     schedule: '02/09/2023, 09:30:00',
     status: 'failed',
-    patient: 'carmella@hotmail.com',
+    patient: 'Carmella',
   },
   {
     id: 'bhqecj4p12',
     schedule: '02/09/2023, 10:00:00',
     status: 'failed',
-    patient: 'carteesa@hotmail.com',
+    patient: 'Carteesa',
   },
   {
     id: 'bhqesafacj4p12',
     schedule: '02/09/2023, 10:30:00',
     status: 'success',
-    patient: 'devns12@hotmail.com',
+    patient: 'Devns',
   },
   {
     id: 'bhqesafacj4p12',
     schedule: '02/09/2023, 11:00:00',
     status: 'success',
-    patient: 'waasns12@hotmail.com',
+    patient: 'Waasns',
   },
 ];
 
@@ -78,7 +78,7 @@ export const columns: ColumnDef<PatientProps>[] = [
     accessorKey: 'patient',
     header: 'Paciente',
     cell: ({ row }) => (
-      <div className="lowercase">{row.getValue('patient')}</div>
+      <div className="capitalize">{row.getValue('patient')}</div>
     ),
   },
   {

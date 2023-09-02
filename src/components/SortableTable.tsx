@@ -79,17 +79,17 @@ export function SortableTable({
       {hasFilter && (
         <div className="flex items-center py-4">
           <Input
-            placeholder="Filter emails..."
+            placeholder="Buscar emails..."
             value={(table.getColumn('email')?.getFilterValue() as string) ?? ''}
             onChange={(event) =>
               table.getColumn('email')?.setFilterValue(event.target.value)
             }
-            className="max-w-sm"
+            className="max-w-sm bg-white"
           />
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="outline" className="ml-auto">
-                Columns <ChevronDownIcon className="ml-2 h-4 w-4" />
+              <Button variant="outline" className="ml-auto bg-white">
+                Colunas <ChevronDownIcon className="ml-2 h-4 w-4 " />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
@@ -114,7 +114,7 @@ export function SortableTable({
           </DropdownMenu>
         </div>
       )}
-      <div className="rounded-md border">
+      <div className="rounded-md border bg-white">
         <Table>
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
@@ -157,7 +157,7 @@ export function SortableTable({
                   colSpan={columns.length}
                   className="h-24 text-center"
                 >
-                  No results.
+                  Nenhum resultado encontrado.
                 </TableCell>
               </TableRow>
             )}
@@ -167,25 +167,23 @@ export function SortableTable({
       {hasPagination && (
         <div className="flex items-center justify-end space-x-2 py-4">
           <div className="flex-1 text-sm text-muted-foreground">
-            {table.getFilteredSelectedRowModel().rows.length} of{' '}
-            {table.getFilteredRowModel().rows.length} row(s) selected.
+            {table.getFilteredSelectedRowModel().rows.length} de{' '}
+            {table.getFilteredRowModel().rows.length} linha(s) selecionadas.
           </div>
           <div className="space-x-2">
             <Button
               variant="outline"
               size="sm"
               onClick={() => table.previousPage()}
-              disabled={!table.getCanPreviousPage()}
             >
-              Previous
+              Anterior
             </Button>
             <Button
               variant="outline"
               size="sm"
               onClick={() => table.nextPage()}
-              disabled={!table.getCanNextPage()}
             >
-              Next
+              Próxima
             </Button>
           </div>
         </div>

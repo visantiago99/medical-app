@@ -9,7 +9,7 @@ export default function SidebarDemo() {
       <div
         className={` ${
           open ? 'w-48' : 'w-14 '
-        } flex flex-col h-[calc(100%-0.2rem)] p-3 bg-slate-100 shadow duration-300`}
+        } flex flex-col h-[calc(100%-0.2rem)] p-3 bg-gray-200 shadow duration-300`}
       >
         <div className="space-y-3">
           <div className={`flex justify-center`}>
