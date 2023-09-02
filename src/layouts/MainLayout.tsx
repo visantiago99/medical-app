@@ -22,7 +22,7 @@ const MainLayout = ({ children, title }: MainLayoutProps) => (
     <div className="flex h-full w-full">
       <Sidebar />
       <main
-        className="w-full bg-gray-50 overflow-y-auto"
+        className="w-full h-full bg-gray-50 overflow-y-auto"
         style={{ height: 'calc(100vh - 4rem)' }}
       >
         {children}

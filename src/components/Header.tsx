@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header
       className="
-    bg-green-500
+    bg-slate-100
       h-16
       p-4
       shadow-md
