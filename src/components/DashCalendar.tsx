@@ -6,14 +6,12 @@ import ptBr from 'date-fns/locale/pt-BR';
 const DashCalendar = () => {
   const [startDate, setStartDate] = useState<Date | null>(new Date());
   return (
-    <div>
-      <DatePicker
-        selected={startDate}
-        onChange={(date) => setStartDate(date)}
-        locale={ptBr}
-        inline
-      />
-    </div>
+    <DatePicker
+      selected={startDate}
+      onChange={(date) => setStartDate(date)}
+      locale={ptBr}
+      inline
+    />
   );
 };
 
