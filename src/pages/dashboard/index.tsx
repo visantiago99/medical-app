@@ -19,7 +19,7 @@ const DashboardPage = () => {
             </div>
             <div className="mt-4">
               <Label className="text-2xl" htmlFor="warnings">
-                AVISOS / LEMBRETES
+                CONSULTAS
               </Label>
               <DashTable />
             </div>

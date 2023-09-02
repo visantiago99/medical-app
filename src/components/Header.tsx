@@ -4,8 +4,9 @@ import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 const Header = () => {
   return (
     <header
+      style={{ borderBottom: '1px solid #aeaeae' }}
       className="
-      bg-gray-200
+      bg-[#f0f0f0]
       h-16
       p-4
       shadow-md
