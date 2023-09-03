@@ -17,7 +17,7 @@ const data: Payment[] = [
   {
     id: 'm5gr84i9',
     amount: 316,
-    status: 'success',
+    status: 'Pago',
     schedule: '02/09/2023, 07:30:00',
     email: 'ken99@yahoo.com',
     name: 'ken',
@@ -25,7 +25,7 @@ const data: Payment[] = [
   {
     id: '3u1reuv4',
     amount: 242,
-    status: 'success',
+    status: 'Pago',
     schedule: '02/09/2023, 07:30:00',
     name: 'abe',
     email: 'Abe45@gmail.com',
@@ -33,7 +33,7 @@ const data: Payment[] = [
   {
     id: 'derv1ws0',
     amount: 837,
-    status: 'processing',
+    status: 'Processando pagamento',
     schedule: '02/09/2023, 07:30:00',
     name: 'monserrat',
     email: 'Monserrat44@gmail.com',
@@ -41,7 +41,7 @@ const data: Payment[] = [
   {
     id: '5kma53ae',
     amount: 874,
-    status: 'success',
+    status: 'Pago',
     schedule: '02/09/2023, 07:30:00',
     name: 'Sila',
     email: 'Silas22@gmail.com',
@@ -49,7 +49,7 @@ const data: Payment[] = [
   {
     id: 'bhqecj4p',
     amount: 721,
-    status: 'failed',
+    status: 'Pagamento Recusado',
     schedule: '02/09/2023, 07:30:00',
     name: 'carmella',
     email: 'carmella@hotmail.com',
@@ -57,7 +57,7 @@ const data: Payment[] = [
   {
     id: 'bhqecj4p12',
     amount: 221,
-    status: 'failed',
+    status: 'Pagamento Recusado',
     schedule: '02/09/2023, 07:30:00',
     name: 'carteesa',
     email: 'carteesa@hotmail.com',
@@ -65,7 +65,7 @@ const data: Payment[] = [
   {
     id: 'bhqesafacj4p12',
     amount: 521,
-    status: 'success',
+    status: 'Pago',
     schedule: '02/09/2023, 07:30:00',
     name: 'devns',
     email: 'devns12@hotmail.com',
@@ -73,7 +73,7 @@ const data: Payment[] = [
   {
     id: 'm5gr84i9',
     amount: 316,
-    status: 'success',
+    status: 'Pago',
     schedule: '02/09/2023, 07:30:00',
     name: 'ken',
     email: 'ken99@yahoo.com',
@@ -81,7 +81,7 @@ const data: Payment[] = [
   {
     id: '3u1reuv4',
     amount: 242,
-    status: 'success',
+    status: 'Pago',
     schedule: '02/09/2023, 07:30:00',
     name: 'Abe',
     email: 'Abe45@gmail.com',
@@ -89,7 +89,7 @@ const data: Payment[] = [
   {
     id: 'derv1ws0',
     amount: 837,
-    status: 'processing',
+    status: 'Processando pagamento',
     schedule: '02/09/2023, 07:30:00',
     name: 'Monserrat',
     email: 'Monserrat44@gmail.com',
@@ -99,7 +99,7 @@ const data: Payment[] = [
 export type Payment = {
   id: string;
   amount: number;
-  status: 'pending' | 'processing' | 'success' | 'failed';
+  status: 'Processando pagamento' | 'Pago' | 'Pagamento Recusado';
   email: string;
   name: string;
   schedule: string;
