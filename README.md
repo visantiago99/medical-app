@@ -1,38 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Consultório Médico WebApp
+Este repositório contém o código-fonte de um WebApp de consultório médico desenvolvido com Next.js e Tailwind CSS. O aplicativo consiste em três principais telas:
 
-## Getting Started
+Área de Trabalho
 
-First, run the development server:
+Exibe dados estatísticos do consultório, incluindo o número de agendamentos do dia, o número de pacientes atendidos no dia, o faturamento do dia, a agenda do dia e avisos/lembretes.
+Rotina de Agendamento de Pacientes
 
-```bash
+![image](https://github.com/visantiago99/medical-app/assets/60020689/1870c92c-0dc6-42a9-a308-836e15174acb)
+
+Agendar Consultas
+
+Apresenta a agenda dos médicos e permite o agendamento de pacientes. Os usuários podem selecionar um médico, escolher uma data e hora disponíveis e fornecer informações do paciente.
+Rotina de Consulta de Pacientes Agendados e Atendidos
+
+![image](https://github.com/visantiago99/medical-app/assets/60020689/01397b52-dd96-443b-9db2-a9b64398a9e5)
+
+Status de Consultas
+
+Exibe os dados detalhados dos pacientes agendados e atendidos. Os detalhes incluem informações do paciente, informações do agendamento, informações do médico e valores cobrados.
+
+![image](https://github.com/visantiago99/medical-app/assets/60020689/07009bac-4b7a-4867-a6c1-49537c834664)
+
+
+Pré-requisitos
+Node.js: Certifique-se de ter o Node.js instalado em sua máquina.
+
+
+Como Usar
+
+Clone o repositório
+
+bash
+
+Copy code
+
+git clone git@github.com:visantiago99/medical-app.git
+
+cd medical-app
+
+Instale as dependências
+
+bash
+
+Copy code
+
+
+npm install
+
+Execute o aplicativo em modo de desenvolvimento
+
+bash
+
+Copy code
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O aplicativo será executado em http://localhost:3000 por padrão.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Personalize o aplicativo
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Você pode personalizar o aplicativo e adicionar funcionalidades específicas ao consultório médico de acordo com suas necessidades. O código-fonte está organizado em componentes reutilizáveis e páginas separadas para facilitar a expansão e a manutenção.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Tecnologias Utilizadas
+Next.js: Framework React para desenvolvimento web.
+Tailwind CSS: Uma estrutura de design CSS utilitária.
+Outras bibliotecas e ferramentas podem ser encontradas no arquivo package.json.
+Contribuindo
+Sinta-se à vontade para contribuir para este projeto, abrindo problemas (issues) e enviando pull requests. Certifique-se de seguir as diretrizes de contribuição do projeto.
