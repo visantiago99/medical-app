@@ -12,6 +12,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '../ui/dropdown-menu';
+import { Badge } from '../ui/badge';
 
 const data: Payment[] = [
   {
@@ -129,7 +130,9 @@ export const columns: ColumnDef<Payment>[] = [
     accessorKey: 'status',
     header: 'Status',
     cell: ({ row }) => (
-      <div className="capitalize">{row.getValue('status')}</div>
+      <div className="capitalize">
+        <Badge>{row.getValue('status')}</Badge>
+      </div>
     ),
   },
   {
