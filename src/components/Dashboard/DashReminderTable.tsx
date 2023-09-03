@@ -105,15 +105,15 @@ export const columns: ColumnDef<RemindersProps>[] = [
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
-            <DropdownMenuLabel>Actions</DropdownMenuLabel>
+            <DropdownMenuLabel>Ações</DropdownMenuLabel>
             <DropdownMenuItem
               onClick={() => navigator.clipboard.writeText(payment.id)}
             >
-              Copy payment ID
+              Copiar lembrete
             </DropdownMenuItem>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>View customer</DropdownMenuItem>
-            <DropdownMenuItem>View payment details</DropdownMenuItem>
+            <DropdownMenuItem>Editar lembrete</DropdownMenuItem>
+            <DropdownMenuItem>Apagar lembrete</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       );
