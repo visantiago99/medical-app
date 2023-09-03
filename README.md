@@ -27,26 +27,34 @@ Node.js: Certifique-se de ter o Node.js instalado em sua máquina.
 
 
 Como Usar
+
 Clone o repositório
 
 bash
+
 Copy code
 
 git clone git@github.com:visantiago99/medical-app.git
+
 cd medical-app
+
 Instale as dependências
 
 bash
+
 Copy code
 
 
 npm install
+
 Execute o aplicativo em modo de desenvolvimento
 
 bash
+
 Copy code
 
 npm run dev
+
 O aplicativo será executado em http://localhost:3000 por padrão.
 
 Personalize o aplicativo
