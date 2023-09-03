@@ -1,5 +1,4 @@
 Consultório Médico WebApp
-
 Este repositório contém o código-fonte de um WebApp de consultório médico desenvolvido com Next.js e Tailwind CSS. O aplicativo consiste em três principais telas:
 
 Área de Trabalho
@@ -11,29 +10,31 @@ Apresenta a agenda dos médicos e permite o agendamento de pacientes. Os usuári
 Rotina de Consulta de Pacientes Agendados e Atendidos
 
 Exibe os dados detalhados dos pacientes agendados e atendidos. Os detalhes incluem informações do paciente, informações do agendamento, informações do médico e valores cobrados.
+
 Pré-requisitos
 Node.js: Certifique-se de ter o Node.js instalado em sua máquina.
-Yarn (opcional): Recomendamos usar Yarn como gerenciador de pacotes, mas você também pode usar o npm.
+
+
 Como Usar
 Clone o repositório
 
 bash
 Copy code
-git clone https://github.com/seu-usuario/consultorio-medico-webapp.git
-cd consultorio-medico-webapp
+
+git clone git@github.com:visantiago99/medical-app.git
+cd medical-app
 Instale as dependências
 
 bash
 Copy code
-yarn install
-# ou
+
+
 npm install
 Execute o aplicativo em modo de desenvolvimento
 
 bash
 Copy code
-yarn dev
-# ou
+
 npm run dev
 O aplicativo será executado em http://localhost:3000 por padrão.
 
