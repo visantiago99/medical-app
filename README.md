@@ -22,7 +22,7 @@ Status de Consultas
 
 Exibe os dados detalhados dos pacientes agendados e atendidos. Os detalhes incluem informações do paciente, informações do agendamento, informações do médico e valores cobrados.
 
-![image](https://github.com/visantiago99/medical-app/assets/60020689/45207f58-de2d-4ee3-875d-e755c4a87c33)
+![image](https://github.com/visantiago99/medical-app/assets/60020689/fb290a1e-289b-4e35-968a-7ea9ac19bc80)
 
 Pré-requisitos
 Node.js: Certifique-se de ter o Node.js instalado em sua máquina.
