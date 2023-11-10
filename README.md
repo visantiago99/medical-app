@@ -9,22 +9,20 @@ Este repositório contém o código-fonte de um WebApp de consultório médico d
 Exibe dados estatísticos do consultório, incluindo o número de agendamentos do dia, o número de pacientes atendidos no dia, o faturamento do dia, a agenda do dia e avisos/lembretes.
 Rotina de Agendamento de Pacientes
 
-![image](../../medical-app/medical-app/public/readme1.jpg)
+![image](https://github.com/visantiago99/medical-app/assets/60020689/45cd23d3-161f-4d95-97f1-9aac14ccff98)
 
 Agendar Consultas
 
 Apresenta a agenda dos médicos e permite o agendamento de pacientes. Os usuários podem selecionar um médico, escolher uma data e hora disponíveis e fornecer informações do paciente.
 Rotina de Consulta de Pacientes Agendados e Atendidos
 
-![image](../../medical-app/medical-app/public/readme2.jpg)
-
+![image](https://github.com/visantiago99/medical-app/assets/60020689/6d7eb2da-c058-466a-9a44-97d5d21b5c64)
 
 Status de Consultas
 
 Exibe os dados detalhados dos pacientes agendados e atendidos. Os detalhes incluem informações do paciente, informações do agendamento, informações do médico e valores cobrados.
 
-![image](../../medical-app/medical-app/public/readme3.jpg)
-
+![image](https://github.com/visantiago99/medical-app/assets/60020689/45207f58-de2d-4ee3-875d-e755c4a87c33)
 
 Pré-requisitos
 Node.js: Certifique-se de ter o Node.js instalado em sua máquina.
